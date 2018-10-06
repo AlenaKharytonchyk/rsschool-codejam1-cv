@@ -125,3 +125,26 @@ header ul {
   font-size: 16px;
   text-align: left;
 }
+.tab-skills .checked {
+    color: #ffa500;
+}
+.grid-item:nth-last-child(-n+2),
+.grid-item-ba:nth-last-child(-n+3)  {
+    border-bottom: none;
+}
+.grid-ba {
+    display: grid;
+    grid-template-columns: 1fr 2fr 3fr;
+    grid-auto-rows: repeat(2, 1fr);
+    font-size: 18px;
+}
+.grid-item-ba {
+    border-bottom: 1px solid #ccc;
+    padding: 20px;
+    font-size: 16px;
+    text-align: left;
+}
+.grid-item-ba li::after{
+    content: "";
+    color: #507b66;
+}
