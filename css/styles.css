@@ -1,0 +1,58 @@
+body {
+    background:  #55675e;
+    font: normal 16px/1 "Trebuchet MS", Helvetica, sans-serif;
+}
+section {
+    width: 85%;
+    max-width: 1024px;
+    min-width: 680px;
+    margin: 0 auto;
+}
+delimiter {
+    padding: 0 5px;
+}
+.card {
+    box-sizing: content-box;
+    margin: 20px auto;
+    overflow: hidden;
+    border-radius: 4px;
+    text-align: left;
+    text-overflow: ellipsis;
+}
+header {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    grid-gap: 2px;
+    box-shadow: 1px 0 20px 0 rgba(0,0,0,0.3);
+    background-color: #489e73;
+    overflow: hidden;
+    height: 260px;
+}
+header, a, i {
+    color: #fff;
+}
+.personal-info {
+    padding: 0 0 20px 20px;
+}
+.prev-job {
+    opacity: 0.5;
+}
+header ul {
+    list-style-type: none;
+    padding-inline-start: 0;
+}
+.contact-info li {
+    margin-bottom: 5px;
+}
+.contact-info i {
+    width: 20px;
+    margin-right: 5px;
+}
+.socmedia li {
+    display: inline;
+    font-size: 2em;
+    margin-right: 10px;
+}
+.socmedia i:hover {
+    text-shadow: 0 0 9px #fff ;
+}
