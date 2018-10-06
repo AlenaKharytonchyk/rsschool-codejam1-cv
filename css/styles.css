@@ -2,7 +2,7 @@ body {
     background:  #55675e;
     font: normal 16px/1 "Trebuchet MS", Helvetica, sans-serif;
 }
-section {
+section.wrapper {
     width: 85%;
     max-width: 1024px;
     min-width: 680px;
@@ -55,4 +55,73 @@ header ul {
 }
 .socmedia i:hover {
     text-shadow: 0 0 9px #fff ;
+}
+.tab-nav > input,
+.tab-nav article > div {
+    display: none;
+}
+
+#tab-summary:checked ~ article .tab-summary,
+#tab-edu:checked ~ article .tab-edu,
+#tab-skills:checked ~ article .tab-skills,
+#tab-projects:checked ~ article .tab-projects,
+#tab-ba:checked ~ article .tab-ba,
+#tab-feedback:checked ~ article .tab-feedback {
+    display: block;
+}
+.tab-nav nav ul li{
+    display: inline;
+}
+.tab-nav nav ul {
+    padding-inline-start: 0px;
+}
+#tab-summary:checked ~ nav .tab-summary label,
+#tab-edu:checked ~ nav .tab-edu label,
+#tab-skills:checked ~ nav .tab-skills label,
+#tab-projects:checked ~ nav .tab-projects label,
+#tab-ba:checked ~ nav .tab-ba label,
+#tab-feedback:checked ~ nav .tab-feedback label {
+  background: #f2f6f7;
+  color: #716c6c;
+  position: relative;
+}
+.tab-nav ul li label {
+    box-sizing: content-box;
+    position: relative;
+    top: 0;
+    float: left;
+    padding: 15px 22px;
+    text-align: center;
+    text-transform: uppercase;
+    text-overflow: clip;
+    background: #507b66;
+    color: #fff;
+    cursor: pointer;
+    margin-right: 5px;
+}
+.tab-nav ul li label:hover{
+    background: #365445;
+}
+.tab-nav ul li label:active{
+    background: #2f7955;
+}
+.tab-nav article > div {
+    padding: 20px; 
+    background: #f2f6f7;
+    line-height: 1.5em;
+    letter-spacing: 0.3px;
+    color: #716c6c;
+}
+.tab-nav article {
+    clear: both;
+}
+.grid {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+}
+.grid-item {
+  border-bottom: 1px solid #ccc;
+  padding: 20px;
+  font-size: 16px;
+  text-align: left;
 }

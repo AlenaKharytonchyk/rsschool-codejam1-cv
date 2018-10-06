@@ -22,7 +22,7 @@
 </head>
 
 <body>
-    <section>
+    <section class="wrapper">
         <header class="card">
             <div class="personal-info">
                 <h1 class="full-name">
@@ -49,9 +49,71 @@
                 <img src="./img/alena_foto.jpg" alt="Pretty girl is supposed to be here" width="400px">
             </div>
         </header>
-        <article class="card">
+        <section class="card tab-nav">
 
-        </article>
+            <input id="tab-summary" type="radio" name="tab" checked="checked" />
+            <input id="tab-edu" type="radio" name="tab" />
+            <input id="tab-skills" type="radio" name="tab" />
+            <input id="tab-projects" type="radio" name="tab" />
+            <input id="tab-ba" type="radio" name="tab" />
+            <input id="tab-feedback" type="radio" name="tab" />
+            <nav>
+                <ul>
+                    <li class="tab-summary"><label for="tab-summary">Summary</label></li>
+                    <li class="tab-edu"><label for="tab-edu">Education</label></li>
+                    <li class="tab-skills"><label for="tab-skills">Skills</label></li>
+                    <li class="tab-projects"><label for="tab-projects">Projects</label></li>
+                    <li class="tab-ba"><label for="tab-ba">Background</label></li>
+                    <li class="tab-feedback"><label for="tab-feedback">Feedback Form</label></li>
+                </ul>
+            </nav>
+            <article>
+                <div class="tab-summary">
+                    <p>Summary placeholder</p>
+                </div>
+            </article>
+            <article>
+
+                <div class="tab-edu">
+                    <div class="grid">
+                        <div class="date grid-item">
+                            09.2005-05.2010
+                        </div>
+                        <div class="grid-item">
+                            Belarusian State University of Informatics and Radioelectronics (BSUIR)<br>
+                            Faculty of Engineering and Economics<br>
+                            <b>Programme: Economics in Electronic Commerce</b>
+                        </div>
+                        <div class="date grid-item">
+                            09.2018-till now
+                        </div>
+                        <div class="grid-item">
+                            <b>JavaScript Development</b> by The Rolling Scopes School
+                        </div>
+                        <div class="date grid-item">
+                            11.2017
+                        </div>
+                        <div class="grid-item">
+                            <b>Introduction to Python for Data Science</b> by Edx
+                        </div>
+                        <div class="date grid-item">
+                            10.2017
+                        </div>
+                        <div class="grid-item">
+                            <b>Introduction to Python.Beginner</b> by Edx
+                        </div>
+                        <div class="date grid-item">
+                            09.2017
+                        </div>
+                        <div class="grid-item">
+                            <b>Gaming analytics:</b> from fundamentals to advanced technique by DevtoDev
+                        </div>
+                    </div>
+
+                </div>
+            </article>
+        </section>
+
     </section>
 </body>
 
