@@ -34,6 +34,18 @@ header {
 header, a, i {
     color: #fff;
 }
+.tab-projects a {
+    color: #55675e;
+}
+.tab-projects i {
+    color: #55675e;
+    width: 20px;
+    margin-right: 20px;
+    font-size: 2em;
+}
+.tab-projects i:hover {
+    text-shadow: 0 0 9px #489e73 ;
+}
 .personal-info {
     padding: 0 0 20px 20px;
 }
@@ -64,7 +76,6 @@ header ul {
     display: none;
 }
 
-#tab-summary:checked ~ article .tab-summary,
 #tab-edu:checked ~ article .tab-edu,
 #tab-skills:checked ~ article .tab-skills,
 #tab-projects:checked ~ article .tab-projects,
@@ -78,7 +89,6 @@ header ul {
 .tab-nav nav ul {
     padding-inline-start: 0px;
 }
-#tab-summary:checked ~ nav .tab-summary label,
 #tab-edu:checked ~ nav .tab-edu label,
 #tab-skills:checked ~ nav .tab-skills label,
 #tab-projects:checked ~ nav .tab-projects label,
@@ -143,16 +153,6 @@ header ul {
     grid-auto-rows: repeat(2, 1fr);
     font-size: 18px;
 }
-/* .grid-item-ba {
-    border-bottom: 1px solid #ccc;
-    padding: 20px;
-    font-size: 16px;
-    text-align: left;
-}
-.grid-item-ba li::before{
-    content: "";
-    color: #507b66;
-} */
 button {
     display: inline-block;
     box-sizing: content-box;
