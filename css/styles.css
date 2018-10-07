@@ -1,6 +1,9 @@
 body {
     background:  #55675e;
     font: normal 16px/1 "Trebuchet MS", Helvetica, sans-serif;
+    position: relative;
+    padding-bottom: 45px;
+    margin: 0;
 }
 section.wrapper {
     width: 85%;
@@ -12,7 +15,7 @@ delimiter {
     padding: 0 5px;
 }
 .card {
-    box-sizing: content-bo41;
+    box-sizing: content-bo41x;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 4px;
@@ -90,7 +93,7 @@ header ul {
     position: relative;
     top: 0;
     float: left;
-    padding: 15px 22px;
+    padding: 15px 15px;
     text-align: center;
     text-transform: uppercase;
     text-overflow: clip;
@@ -98,6 +101,7 @@ header ul {
     color: #fff;
     cursor: pointer;
     margin-right: 5px;
+    font-size: 14px;
 }
 .tab-nav ul li label:hover{
     background: #365445;
@@ -235,4 +239,14 @@ background: #fff;
 }
 .comment p::before {
     content: '*'
+}
+footer {
+width: 100%;
+height: 45px;
+position: fixed;
+bottom: 0;
+font-size: 14px;
+color: #ccc;
+text-align: center;
+background: #55675e;
 }
