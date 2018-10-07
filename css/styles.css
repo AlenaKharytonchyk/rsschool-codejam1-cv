@@ -12,7 +12,7 @@ delimiter {
     padding: 0 5px;
 }
 .card {
-    box-sizing: content-box;
+    box-sizing: content-bo41;
     margin: 20px auto;
     overflow: hidden;
     border-radius: 4px;
@@ -117,7 +117,9 @@ header ul {
 }
 .grid {
     display: grid;
-    grid-template-columns: 1fr 2fr;
+}
+.grid-1-2 {
+    grid-template-columns: 1fr 2fr; 
 }
 .grid-item {
   border-bottom: 1px solid #ccc;
@@ -128,23 +130,109 @@ header ul {
 .tab-skills .checked {
     color: #ffa500;
 }
-.grid-item:nth-last-child(-n+2),
-.grid-item-ba:nth-last-child(-n+3)  {
+.grid-1-2 .grid-item:nth-last-child(-n+2),
+.grid-1-2-3 .grid-item:nth-last-child(-n+3)  {
     border-bottom: none;
 }
-.grid-ba {
-    display: grid;
+.grid-1-2-3 {
     grid-template-columns: 1fr 2fr 3fr;
     grid-auto-rows: repeat(2, 1fr);
     font-size: 18px;
 }
-.grid-item-ba {
+/* .grid-item-ba {
     border-bottom: 1px solid #ccc;
     padding: 20px;
     font-size: 16px;
     text-align: left;
 }
-.grid-item-ba li::after{
+.grid-item-ba li::before{
     content: "";
     color: #507b66;
+} */
+button {
+    display: inline-block;
+    box-sizing: content-box;
+    position: relative;
+    cursor: pointer;
+    margin: 10px 0 0;
+    padding: 22px 22px;
+    border: 4px solid #fff;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-overflow: clip;
+    background: #507b66;
+    }
+    
+button:hover {
+    background: #365445;
+    }
+    
+button:active {
+    background: #2f7955;
+}
+
+form input[type='text']{
+    appearance:none;
+    border: none;
+    border-bottom: 1.5px solid #ccc;
+    cursor: pointer;
+    padding: 5px;
+    display: block;
+    position: relative;
+    padding-left: 0.5em;
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    
+    
+}
+.feedback-text {
+    font-size: 16px;
+    font-weight: 700;
+}
+.container {
+    display: block;
+    position: relative;
+    padding-left: 35px;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 16px;
+    user-select: none;
+}
+.container input {
+position: absolute;
+opacity: 0;
+}
+.checkmark {
+position: absolute;
+top: 0;
+left: 0;
+height: 25px;
+width: 25px;
+background-color: #d4caca;
+border-radius: 50%;
+}
+.container:hover input ~ .checkmark {
+background-color: #ccc;
+}
+.container input:checked ~ .checkmark {
+background-color: #507b66;
+}
+.checkmark:after {
+content: "";
+position: absolute;
+display: none;
+}
+.container input:checked ~ .checkmark:after {
+display: block;
+}
+.container .checkmark:after {
+top: 9px;
+left: 9px;
+width: 8px;
+height: 8px;
+border-radius: 50%;
+background: #fff;
+}
+.comment p::before {
+    content: '*'
 }
